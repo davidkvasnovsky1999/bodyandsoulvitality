@@ -1,0 +1,59 @@
+body#treninky1 > main {
+  .foto_popis {
+    position: relative;
+  }
+  .container > img {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  @media screen and (min-width: 1px) {
+    .container > .row {
+      margin-bottom: 3rem;
+      .foto_popis_text {
+        font-size: 1.8rem;
+        padding: 2rem;
+        color: black;
+        background: rgba(255, 255, 255, 0.9);
+        z-index: 100;
+        margin-bottom: 3rem;
+      }
+      > div > img {
+        margin: 0;
+        &:first-of-type {
+          margin-bottom: 3rem;
+          margin-top: 3rem;
+        }
+      }
+    }
+  }
+
+
+  @media screen and (min-width: 768px) {
+  }
+
+
+  @media screen and (min-width: 992px) {
+    .container > .row {
+      max-height: 637px;
+      overflow-y: hidden;
+      > div > img:first-of-type  {
+        margin-top: 0;
+      }
+      .foto_popis_text {
+        position: absolute;
+      }
+    }
+  }
+
+
+  @media screen and (min-width: 1200px) {
+    .container > .row {
+      max-height: 770px;
+      > div > img:last-child {
+      margin-bottom: 0;
+      margin-top: 3rem;
+    }
+    }
+  }
+}

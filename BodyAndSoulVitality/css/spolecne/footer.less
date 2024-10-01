@@ -1,0 +1,39 @@
+footer{
+  font-family: @font-family-main;
+  //flex-basis: 100%;
+  border-top: @border-main;
+  background:rgba(255,255,255,0.8);
+  padding-top: 1.5rem;
+  text-align: left;
+  font-size: 1.4rem;
+  justify-self: flex-end;
+  flex: 0 0 auto;
+  > .container {
+    > .row {
+      > div {
+        > h3 {
+          text-align: center;
+          padding: 0;
+          margin: 2rem 0 0;
+        }
+        > hr {
+          margin: 1rem 0;
+          border-color: black;
+        }
+        > .row {
+          > div > a {
+            text-decoration: none;
+            color: black;
+            &:hover, &:focus {
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+    > p {
+      text-align: center;
+      margin-top: 2rem;
+    }
+  }
+}

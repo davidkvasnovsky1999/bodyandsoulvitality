@@ -1,0 +1,61 @@
+body#partneri {
+  > main {
+    > .container {
+      > .row {
+        > div {
+          font-size: 1.8rem;
+          margin: 2rem 0;
+          > .row {
+            > div {
+              a{
+                text-align: center;
+                text-decoration: none;
+                color: black;
+                font-weight: 600;
+                font-size: 2.2rem;
+                &:hover, &:focus {
+                  text-decoration: none;
+                  font-weight: 500;
+                }
+                .advert-border {
+                  border-radius: 1rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1px) {
+  body#partneri {
+    .partneri-popis {
+      margin: 2rem 0 2rem;
+    }
+    a > img {
+      margin: 0 auto;
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body#partneri {
+    .partneri-popis {
+      margin: 2rem 0 0;
+    }
+    a > img {
+      width: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body#partneri {
+    a > img {
+      max-height: 20rem;
+    }
+  }
+}

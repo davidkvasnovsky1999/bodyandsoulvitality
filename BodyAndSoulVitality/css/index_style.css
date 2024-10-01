@@ -1,0 +1,499 @@
+@import "/bootstrap-3.3.7-dist/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=latin-ext');
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:active,
+.hvr-grow:focus,
+.hvr-grow:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+*,
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  -webkit-font-smoothing: antialiased;
+}
+html {
+  font-size: 62.5%;
+  height: 100%;
+  background: url("/img/pozadi.png") no-repeat fixed;
+  background-size: cover;
+}
+body {
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 1.8rem;
+  height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+body main {
+  flex: 1 0 auto;
+}
+body > header {
+  flex: 0 0 auto;
+  justify-self: flex-start;
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+}
+body > header > .container #header-div-nadpis {
+  float: right;
+  height: 12rem;
+  text-align: right;
+}
+body > header > .container #header-div-nadpis > span {
+  display: inline-flex;
+  align-items: flex-end;
+  height: 100%;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+body > header .navbar {
+  background: rgba(255, 255, 255, 0.8);
+  border: 0;
+  min-height: 0;
+  margin-bottom: 3rem;
+}
+body > header .navbar button {
+  padding-right: 0;
+}
+body > header .navbar .icon-bar {
+  background-color: black !important;
+}
+body > header .navbar .navbar-nav {
+  width: 100%;
+}
+body > header .navbar .navbar-nav > li > a {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: black;
+}
+body > header .navbar .navbar-nav > li > a:focus,
+body > header .navbar .navbar-nav > li > a:hover {
+  color: black;
+  background-color: inherit;
+  font-weight: 600;
+}
+#uvod > header > nav > .container > .collapse > .navbar-nav > li:nth-of-type(1) > a,
+#rozvrh_salu > header > nav > .container > .collapse > .navbar-nav > li:nth-of-type(2) > a,
+#fotogalerie > header > nav > .container > .collapse > .navbar-nav > li:nth-of-type(3) > a,
+#partneri > header > nav > .container > .collapse > .navbar-nav > li:nth-of-type(4) > a,
+#kontakty > header > nav > .container > .collapse > .navbar-nav > li:nth-of-type(5) > a,
+#osalu > header > nav > .container > .collapse > .navbar-nav > li:nth-of-type(6) > a {
+  font-weight: 700;
+}
+@media screen and (min-width: 1px) {
+  header img {
+    margin: 0 auto;
+  }
+  header .navbar-nav > li {
+    text-align: left;
+  }
+  header .navbar-nav > li a {
+    padding: 2rem 1.5rem;
+  }
+  header #header-div-nadpis > span {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  header img {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  header #header-div-nadpis > span {
+    font-size: 3rem;
+  }
+  header #header-div-nadpis > span br {
+    display: none;
+  }
+  header .navbar-nav > li {
+    width: 16.66666667%;
+    text-align: center;
+  }
+  header .navbar-nav > li a {
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header #header-div-nadpis > span {
+    font-size: 3.6rem;
+  }
+}
+footer {
+  font-family: 'Open Sans', sans-serif;
+  border-top: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  padding-top: 1.5rem;
+  text-align: left;
+  font-size: 1.4rem;
+  justify-self: flex-end;
+  flex: 0 0 auto;
+}
+footer > .container > .row > div > h3 {
+  text-align: center;
+  padding: 0;
+  margin: 2rem 0 0;
+}
+footer > .container > .row > div > hr {
+  margin: 1rem 0;
+  border-color: black;
+}
+footer > .container > .row > div > .row > div > a {
+  text-decoration: none;
+  color: black;
+}
+footer > .container > .row > div > .row > div > a:hover,
+footer > .container > .row > div > .row > div > a:focus {
+  font-weight: 600;
+}
+footer > .container > p {
+  text-align: center;
+  margin-top: 2rem;
+}
+body#uvod > main #carousel-example-generic {
+  color: #fff;
+  border: 1px solid #fff;
+  margin-bottom: 6rem;
+}
+body#uvod > main #carousel-example-generic > .carousel-indicators {
+  bottom: -5rem;
+}
+body#uvod > main #carousel-example-generic > .carousel-indicators li {
+  height: 1.2rem;
+  width: 1.2rem;
+  display: inline-block;
+  margin: 0 1rem;
+}
+body#uvod > main #carousel-example-generic > .carousel-indicators .active {
+  background-color: black;
+  height: 1.2rem;
+  width: 1.2rem;
+  margin: 0 1rem;
+}
+body#uvod > main #carousel-example-generic > .carousel-control.left,
+body#uvod > main #carousel-example-generic .carousel-control.right {
+  background: none;
+}
+body#uvod > main .foto_cviceni {
+  position: relative;
+  border: 1px solid #fff;
+  margin-bottom: 3rem;
+}
+body#uvod > main .foto_cviceni:hover .foto_cviceni_obsah {
+  color: white;
+  text-align: center;
+  display: block;
+}
+body#uvod > main .foto_cviceni .foto_cviceni_obsah {
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: none;
+  font-size: 2.3rem;
+  color: white;
+  text-align: center;
+  padding-top: 25%;
+}
+body#uvod > main .foto_cviceni .foto_cviceni_popis {
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  color: black;
+  font-size: 3rem;
+  text-align: right;
+  bottom: 1rem;
+  padding: 0 1rem 0 3rem;
+}
+body#uvod > main .foto_cviceni .foto_cviceni_img {
+  width: 100%;
+}
+body#uvod > main .advert {
+  width: 100% !important;
+  margin-bottom: 15px;
+}
+body#uvod > main .advert-border {
+  border-radius: 8px;
+}
+#rozvrh_salu main .container iframe {
+  border: 1px solid #fff;
+}
+.obrazky_v_galerii {
+  margin-bottom: 3rem;
+}
+.obrazky_v_galerii a img {
+  border: 1px solid #fff;
+}
+body#partneri > main > .container > .row > div {
+  font-size: 1.8rem;
+  margin: 2rem 0;
+}
+body#partneri > main > .container > .row > div > .row > div a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+body#partneri > main > .container > .row > div > .row > div a:hover,
+body#partneri > main > .container > .row > div > .row > div a:focus {
+  text-decoration: none;
+  font-weight: 500;
+}
+body#partneri > main > .container > .row > div > .row > div a .advert-border {
+  border-radius: 1rem;
+}
+@media screen and (min-width: 1px) {
+  body#partneri .partneri-popis {
+    margin: 2rem 0 2rem;
+  }
+  body#partneri a > img {
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  body#partneri .partneri-popis {
+    margin: 2rem 0 0;
+  }
+  body#partneri a > img {
+    width: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  body#partneri a > img {
+    max-height: 20rem;
+  }
+}
+body#kontakty > main {
+  text-align: center;
+  color: #000;
+}
+body#kontakty > main h3 {
+  margin: 0 0 4rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+body#kontakty > main #adresy {
+  margin: 0 0 1rem;
+  font-size: 1.8rem;
+}
+body#kontakty > main #spravce {
+  text-align: center;
+  margin: 0 0 6rem;
+}
+body#kontakty > main #mapa {
+  overflow: hidden;
+  min-height: 44rem;
+  color: black;
+  border: 1px solid #fff;
+}
+body#kontakty > main #gmap_canvas {
+  min-height: 44rem;
+}
+body#kontakty > main #adresy {
+  text-align: left;
+}
+body#osalu > main {
+  font-size: 18px;
+}
+body#osalu > main p {
+  text-align: justify;
+}
+body#osalu > main .foto > div {
+  margin-bottom: 3rem;
+}
+body#osalu > main .foto > div img {
+  border: 1px solid #fff;
+}
+body#treninky1 > main .foto_popis {
+  position: relative;
+}
+body#treninky1 > main .container > img {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 1px) {
+  body#treninky1 > main .container > .row {
+    margin-bottom: 3rem;
+  }
+  body#treninky1 > main .container > .row .foto_popis_text {
+    font-size: 1.8rem;
+    padding: 2rem;
+    color: black;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 100;
+    margin-bottom: 3rem;
+  }
+  body#treninky1 > main .container > .row > div > img {
+    margin: 0;
+  }
+  body#treninky1 > main .container > .row > div > img:first-of-type {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  body#treninky1 > main .container > .row {
+    max-height: 637px;
+    overflow-y: hidden;
+  }
+  body#treninky1 > main .container > .row > div > img:first-of-type {
+    margin-top: 0;
+  }
+  body#treninky1 > main .container > .row .foto_popis_text {
+    position: absolute;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body#treninky1 > main .container > .row {
+    max-height: 770px;
+  }
+  body#treninky1 > main .container > .row > div > img:last-child {
+    margin-bottom: 0;
+    margin-top: 3rem;
+  }
+}
+body#treninky2 main > .container > .row > div .foto_popis_text {
+  font-size: 1.8rem;
+  padding: 2rem;
+  color: black;
+  background: rgba(255, 255, 255, 0.8);
+}
+@media screen and (min-width: 1px) {
+  body#treninky2 main > .container .foto_popis_text {
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  body#treninky2 main > .container .foto_popis_text {
+    margin-bottom: 0;
+  }
+}
+body#treninky2 main > .container img {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+body#treninky3 main > .container .foto_popis {
+  font-size: 1.8rem;
+  padding: 2rem;
+  color: black;
+  background: rgba(255, 255, 255, 0.8);
+}
+body#treninky3 main > .container > .row > div > img {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 1px) {
+  body#treninky3 .foto_popis {
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  body#treninky3 .foto_popis {
+    margin-bottom: 0;
+  }
+}
+body#treninky4 main > .container .foto_popis {
+  font-size: 1.8rem;
+  padding: 2rem;
+  color: black;
+  background: rgba(255, 255, 255, 0.8);
+}
+body#treninky4 main > .container img {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 1px) {
+  body#treninky4 .foto_popis {
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  body#treninky4 .foto_popis {
+    margin-bottom: 0;
+  }
+}
+body#treninky5 main > .container .foto_popis {
+  font-size: 1.8rem;
+  padding: 2rem;
+  color: black;
+  background: rgba(255, 255, 255, 0.8);
+}
+body#treninky5 main > .container > .row > div > img {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 1px) {
+  body#treninky5 .foto_popis {
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  body#treninky5 .foto_popis {
+    margin-bottom: 0;
+  }
+}
+body#treninky6 > main .container .foto_popis {
+  font-size: 1.8rem;
+  padding: 2rem;
+  color: black;
+  background: rgba(255, 255, 255, 0.8);
+}
+body#treninky6 > main .container > img {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 1px) {
+  body#treninky6 > main .container .foto_popis {
+    margin-bottom: 3rem;
+  }
+  body#treninky6 > main .container > .row {
+    margin-bottom: 3rem;
+  }
+  body#treninky6 > main .container > .row > div > img {
+    margin: 0;
+  }
+  body#treninky6 > main .container > .row > div > img:nth-of-type(2) {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  body#treninky6 > main .container .foto_popis {
+    margin: 0;
+  }
+  body#treninky6 > main .container > .row {
+    max-height: 637px;
+    overflow-y: hidden;
+  }
+  body#treninky6 > main .container > .row > div > img:first-of-type {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body#treninky6 > main .container > .row {
+    max-height: 770px;
+  }
+  body#treninky6 > main .container > .row > div > img:last-child {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,71 @@
+body#uvod >  main {
+  #carousel-example-generic {
+    color: @font-color-inverse;
+    border: @border-main;
+    margin-bottom: 6rem;
+    > .carousel-indicators {
+      bottom:-5rem;
+      li {
+        height: 1.2rem;
+        width: 1.2rem;
+        display: inline-block;
+        margin: 0 1rem;
+      }
+      & .active {
+        background-color: black;
+        height: 1.2rem;
+        width: 1.2rem;
+        margin: 0 1rem;
+      }
+    }
+    > .carousel-control.left, .carousel-control.right{
+      background: none;
+    }
+  }
+
+
+  .foto_cviceni {
+    position: relative;
+    border: @border-main;
+    margin-bottom: 3rem;
+    &:hover .foto_cviceni_obsah{
+      color: white;
+      text-align: center;
+      display: block;
+    }
+    .foto_cviceni_obsah {
+      background:rgba(0,0,0,0.3);
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      display: none;
+      font-size: 2.3rem;
+      color: white;
+      text-align: center;
+      padding-top: 25%;
+    }
+    .foto_cviceni_popis {
+      background-color: rgba(255,255,255,0.7);
+      position: absolute;
+      color: black;
+      font-size: 3rem;
+      text-align: right;
+      bottom: 1rem;
+      padding: 0 1rem 0 3rem;
+    }
+    .foto_cviceni_img {
+      width: 100%;
+    }
+  }
+
+
+
+  .advert  {
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+
+  .advert-border {
+    border-radius: 8px;
+  }
+}
